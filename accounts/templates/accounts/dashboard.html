@@ -1,20 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
 </head>
 <body>
 
-    <h1>Welcome, {{ request.user.username }}!</h1>
+    <h1>Welcome, {{ user.username }}</h1>
 
-    <p>You are successfully logged in.</p>
+    <p>Role: {{ user_role }}</p>
 
-    <p>Role: {{ request.user.get_role_display }}</p>
-
-    {% if request.user.shop %}
-        <p>Shop: {{ request.user.shop.name }}</p>
+    {% if shop %}
+        <p>Shop: {{ shop.name }}</p>
+    {% else %}
+        <p>No shop assigned.</p>
     {% endif %}
 
     <a href="{% url 'logout' %}">Logout</a>

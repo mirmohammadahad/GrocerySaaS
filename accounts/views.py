@@ -1,6 +1,3 @@
-from django.shortcuts import render
-
-# Create your views here.
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, redirect
@@ -48,4 +45,13 @@ def logout_view(request):
 
 @login_required
 def dashboard(request):
-    return render(request, "accounts/dashboard.html")
+    user = request.user
+
+    return render(
+        request,
+        "accounts/dashboard.html",
+        {
+            "user_role": user.get_role_display(),
+            "shop": user.shop,
+        }
+    )

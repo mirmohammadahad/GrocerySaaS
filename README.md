@@ -103,4 +103,6 @@ Products: [http://127.0.0.1:8000/admin/products/product/](http://127.0.0.1:8000/
 
  i also completed part 3 
  i do login part .
- 
+ Username: rahim
+Email address: rahim@gmail.com
+pass : ahad626675
