@@ -98,4 +98,9 @@ Shops: [http://127.0.0.1:8000/admin/shops/shop/](http://127.0.0.1:8000/admin/sho
 
 Categories: [http://127.0.0.1:8000/admin/products/category/](http://127.0.0.1:8000/admin/products/category/)
 
-Products: [http://127.0.0.1:8000/admin/products/product/](http://127.0.0.1:8000/admin/products/product/)
+Products: [http://127.0.0.1:8000/admin/products/product/](http://127.0.0.1:8000/admin/products/product/) 
+
+
+ i also completed part 3 
+ i do login part .
+ 
